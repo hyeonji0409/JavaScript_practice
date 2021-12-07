@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 전역변수 / 지역변수</title>
+    <script type="text/javascript"> 
+        // var의 유무 관계없이 전역변수
+        // 어디서든 사용 가능
+        var x=5, y=10; // var이 있는 명시적 선언. 전역 변수
+        total=0; // var 없이 값 저장. 전역 변수
+
+        function f1() { // 모든 전역변수 사용 가능
+            x = x + y;
+            document.write(x + "<br>");
+        }
+
+        function f2() { // 모든 전역변수 사용 가능
+            total = x + y;
+            document.write(total + "<br>");
+        }
+
+        f1();
+        f2();
+    </script>
+</head>
+<body>
+
+</body>
+</html>
