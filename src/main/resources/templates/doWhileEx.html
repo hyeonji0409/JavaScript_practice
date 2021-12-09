@@ -3,7 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>JavaScript</title>
-    <script type="text/javascript"> 
+    <script type="text/javascript">
+        var cnt = 0;
+        do{
+            var check = confirm("계속 경고창을 보시겠습니까?");
+            if(check == true) {
+                cnt++;
+                alert("경고 " + cnt);
+            }
+        }while(check == true);
+        document.write("경고창 출력 횟수 : " + cnt);
     </script>
 </head>
 <body>

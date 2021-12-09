@@ -3,7 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>JavaScript</title>
-    <script type="text/javascript"> 
+    <script type="text/javascript">
+        var id_real = 'abcd';
+        var pw_real = '1234';
+        var sudo = '서울';
+        var id = prompt("아이디 입력");
+        var pw = prompt("비밀번호 입력");
+        if(id == id_real && pw == pw_real) {
+            alert(id+"님 반갑습니다");
+            var capital_input = prompt("대한민국의 수도는?");
+            if(capital_input == sudo) {
+                document.write("정답입니다.");
+            } else{
+                 document.write("틀렸습니다. 대한민국의 수도는 서울입니다.");
+            }
+        } else {
+            alert("비밀번호가 일치하지 않습니다.");
+            document.write("로그인 실패");
+        }
     </script>
 </head>
 <body>

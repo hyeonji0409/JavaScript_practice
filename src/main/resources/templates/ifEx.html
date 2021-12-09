@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <title>JavaScript</title>
     <script type="text/javascript"> 
+        var num1 = prompt("숫자 1 입력");
+        var num2 = prompt("숫자 2 입력");
+        var num3 = prompt("숫자 3 입력");
+
+        if(num1 < num2 && num3 < num2){
+            document.write("최대값 : " + num2);
+        }else if(num1 < num3 && num2 < num3){
+           document.write("최대값 : " + num2);
+        } else {
+            document.write("최대값 : " + num1);
+        }
+
     </script>
 </head>
 <body>

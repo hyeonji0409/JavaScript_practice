@@ -4,10 +4,27 @@
     <meta charset="UTF-8">
     <title>JavaScript</title>
     <script type="text/javascript"> 
-        var fruits = ["사과", "베", "포도"];
+        var fruits = ["사과", "배", "포도"];
 
-        for(let i in fruits)
-            document.write("fruits[" + i + "] = " + fruits[i] + "<br>");
+        fruits.forEach(function(item){
+            document.write(item + "<br>");
+        });
+
+        document.write("<hr>");
+
+        fruits.forEach(function(item, index){
+            document.write(index + " " + item + "<br>");
+        });
+
+        document.write("<hr>");
+
+        fruits.forEach(function(item, index, fruits){
+            document.write(index + " " + item + " " + fruits + "<br>");
+        });
+
+        fruits.forEach(function(item, index, fruits){
+				console.log(index, item,  fruits);
+        });
     </script>
 </head>
 <body>
